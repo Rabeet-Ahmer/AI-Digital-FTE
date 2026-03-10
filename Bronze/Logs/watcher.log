@@ -1,0 +1,183 @@
+2026-02-20 00:47:09,558 [FileSystemWatcher] INFO: Vault path: /mnt/d/Vaults/AI_Employee_Vault/Bronze
+2026-02-20 00:47:09,560 [FileSystemWatcher] INFO: Watching: /mnt/d/Vaults/AI_Employee_Vault/Bronze/Inbox
+2026-02-20 00:47:09,561 [FileSystemWatcher] INFO: Drop files into /Inbox/ to trigger processing.
+2026-02-20 00:47:09,561 [FileSystemWatcher] INFO: Press Ctrl+C to stop.
+
+2026-02-20 00:49:11,691 [FileSystemWatcher] INFO: Vault path: /mnt/d/Vaults/AI_Employee_Vault/Bronze
+2026-02-20 00:49:11,693 [FileSystemWatcher] INFO: Watching: /mnt/d/Vaults/AI_Employee_Vault/Bronze/Inbox
+2026-02-20 00:49:11,694 [FileSystemWatcher] INFO: Drop files into /Inbox/ to trigger processing.
+2026-02-20 00:49:11,695 [FileSystemWatcher] INFO: Press Ctrl+C to stop.
+
+2026-02-20 01:02:20,180 [FileSystemWatcher] INFO: Vault path: /mnt/d/Vaults/AI_Employee_Vault/Bronze
+2026-02-20 01:02:20,181 [FileSystemWatcher] INFO: Watching: /mnt/d/Vaults/AI_Employee_Vault/Bronze/Inbox
+2026-02-20 01:02:20,182 [FileSystemWatcher] INFO: Drop files into /Inbox/ to trigger processing.
+2026-02-20 01:02:20,183 [FileSystemWatcher] INFO: Press Ctrl+C to stop.
+
+2026-02-20 01:02:49,576 [FileSystemWatcher] INFO: Vault path: /mnt/d/Vaults/AI_Employee_Vault/Bronze
+2026-02-20 01:02:49,577 [FileSystemWatcher] INFO: Watching: /mnt/d/Vaults/AI_Employee_Vault/Bronze/Inbox
+2026-02-20 01:02:49,578 [FileSystemWatcher] INFO: Drop files into /Inbox/ to trigger processing.
+2026-02-20 01:02:49,579 [FileSystemWatcher] INFO: Press Ctrl+C to stop.
+
+2026-02-20 01:02:52,604 [InboxHandler] INFO: New file detected: urgent_report_test.txt
+2026-02-20 01:02:52,624 [InboxHandler] INFO: Created action file: FILE_urgent_report_test_2026-02-19_200252.md [priority=high]
+2026-02-20 01:02:54,687 [InboxHandler] INFO: New file detected: urgent_report_test.txt
+2026-02-20 01:02:54,724 [InboxHandler] INFO: Created action file: FILE_urgent_report_test_2026-02-19_200254.md [priority=high]
+2026-02-20 01:06:13,018 [FileSystemWatcher] INFO: Vault path: /mnt/d/Vaults/AI_Employee_Vault/Bronze
+2026-02-20 01:06:13,019 [FileSystemWatcher] INFO: Watching: /mnt/d/Vaults/AI_Employee_Vault/Bronze/Inbox
+2026-02-20 01:06:13,020 [FileSystemWatcher] INFO: Drop files into /Inbox/ to trigger processing.
+2026-02-20 01:06:13,021 [FileSystemWatcher] INFO: Press Ctrl+C to stop.
+
+2026-02-20 01:06:16,071 [InboxHandler] INFO: New file detected: urgent_q1_report.txt
+2026-02-20 01:06:16,074 [InboxHandler] INFO: New file detected: urgent_q1_report.txt
+2026-02-20 01:06:16,160 [InboxHandler] INFO: Created action file: FILE_urgent_q1_report_2026-02-19_200616.md [priority=high]
+2026-02-20 01:06:16,190 [InboxHandler] INFO: Created action file: FILE_urgent_q1_report_2026-02-19_200616.md [priority=high]
+2026-02-20 01:06:17,241 [InboxHandler] INFO: New file detected: urgent_q1_report.txt
+2026-02-20 01:06:17,252 [InboxHandler] INFO: Created action file: FILE_urgent_q1_report_2026-02-19_200617.md [priority=high]
+2026-02-20 01:08:09,049 [FileSystemWatcher] INFO: Vault path: /mnt/d/Vaults/AI_Employee_Vault/Bronze
+2026-02-20 01:08:09,050 [FileSystemWatcher] INFO: Watching: /mnt/d/Vaults/AI_Employee_Vault/Bronze/Inbox
+2026-02-20 01:08:09,050 [FileSystemWatcher] INFO: Drop files into /Inbox/ to trigger processing.
+2026-02-20 01:08:09,051 [FileSystemWatcher] INFO: Press Ctrl+C to stop.
+
+2026-02-20 01:08:12,090 [InboxHandler] INFO: New file detected: urgent_q1_report.txt
+2026-02-20 01:08:12,102 [InboxHandler] INFO: Created action file: FILE_urgent_q1_report_2026-02-19_200812.md [priority=high]
+2026-02-20 01:08:12,520 [InboxHandler] INFO: New file detected: urgent_q1_report.txt
+2026-02-20 01:08:12,541 [InboxHandler] INFO: Created action file: FILE_urgent_q1_report_2026-02-19_200812.md [priority=high]
+2026-02-20 01:08:13,596 [InboxHandler] INFO: New file detected: urgent_q1_report.txt
+2026-02-20 01:08:13,611 [InboxHandler] INFO: Created action file: FILE_urgent_q1_report_2026-02-19_200813.md [priority=high]
+2026-02-20 01:10:53,064 [InboxHandler] INFO: New file detected: urgent_q1_report.txt
+2026-02-20 01:10:53,076 [InboxHandler] INFO: Created action file: FILE_urgent_q1_report_2026-02-19_201053.md [priority=high]
+2026-02-20 01:10:53,162 [InboxHandler] INFO: New file detected: urgent_q1_report.txt
+2026-02-20 01:10:53,176 [InboxHandler] INFO: Created action file: FILE_urgent_q1_report_2026-02-19_201053.md [priority=high]
+2026-02-20 01:10:54,409 [InboxHandler] INFO: New file detected: urgent_q1_report.txt
+2026-02-20 01:10:54,463 [InboxHandler] INFO: Created action file: FILE_urgent_q1_report_2026-02-19_201054.md [priority=high]
+2026-02-20 01:11:20,297 [InboxHandler] INFO: New file detected: urgent_q1_report.txt
+2026-02-20 01:11:20,314 [InboxHandler] INFO: Created action file: FILE_urgent_q1_report_2026-02-19_201120.md [priority=high]
+2026-02-20 01:11:51,402 [InboxHandler] INFO: New file detected: urgent_q1_report.txt
+2026-02-20 01:11:51,416 [InboxHandler] INFO: Created action file: FILE_urgent_q1_report_2026-02-19_201151.md [priority=high]
+2026-02-20 01:11:51,544 [InboxHandler] INFO: New file detected: urgent_q1_report.txt
+2026-02-20 01:11:51,558 [InboxHandler] INFO: Created action file: FILE_urgent_q1_report_2026-02-19_201151.md [priority=high]
+2026-02-20 01:11:52,702 [InboxHandler] INFO: New file detected: urgent_q1_report.txt
+2026-02-20 01:11:52,730 [InboxHandler] INFO: Created action file: FILE_urgent_q1_report_2026-02-19_201152.md [priority=high]
+2026-02-20 01:11:53,106 [FileSystemWatcher] INFO: Vault path: /mnt/d/Vaults/AI_Employee_Vault/Bronze
+2026-02-20 01:11:53,107 [FileSystemWatcher] INFO: Watching: /mnt/d/Vaults/AI_Employee_Vault/Bronze/Inbox
+2026-02-20 01:11:53,107 [FileSystemWatcher] INFO: Drop files into /Inbox/ to trigger processing.
+2026-02-20 01:11:53,108 [FileSystemWatcher] INFO: Press Ctrl+C to stop.
+
+2026-02-20 01:12:07,835 [InboxHandler] INFO: New file detected: test_report.txt
+2026-02-20 01:12:07,859 [InboxHandler] INFO: Created action file: FILE_test_report_2026-02-19_201207.md [priority=medium]
+2026-02-20 01:12:08,250 [InboxHandler] INFO: New file detected: test_report.txt
+2026-02-20 01:12:08,263 [InboxHandler] INFO: Created action file: FILE_test_report_2026-02-19_201208.md [priority=medium]
+2026-02-20 01:12:08,727 [FileSystemWatcher] INFO: Vault path: /mnt/d/Vaults/AI_Employee_Vault/Bronze
+2026-02-20 01:12:08,728 [FileSystemWatcher] INFO: Watching: /mnt/d/Vaults/AI_Employee_Vault/Bronze/Inbox
+2026-02-20 01:12:08,728 [FileSystemWatcher] INFO: Drop files into /Inbox/ to trigger processing.
+2026-02-20 01:12:08,729 [FileSystemWatcher] INFO: Press Ctrl+C to stop.
+
+2026-02-20 01:12:09,596 [InboxHandler] INFO: New file detected: test_report.txt
+2026-02-20 01:12:09,603 [InboxHandler] INFO: New file detected: test_report.txt
+2026-02-20 01:12:09,634 [InboxHandler] INFO: Created action file: FILE_test_report_2026-02-19_201209.md [priority=medium]
+2026-02-20 01:12:09,647 [InboxHandler] INFO: Created action file: FILE_test_report_2026-02-19_201209.md [priority=medium]
+2026-02-20 01:12:09,719 [InboxHandler] INFO: New file detected: test_report.txt
+2026-02-20 01:12:09,740 [InboxHandler] INFO: Created action file: FILE_test_report_2026-02-19_201209.md [priority=medium]
+2026-02-20 01:12:27,940 [FileSystemWatcher] INFO: Vault path: /mnt/d/Vaults/AI_Employee_Vault/Bronze
+2026-02-20 01:12:27,941 [FileSystemWatcher] INFO: Watching: /mnt/d/Vaults/AI_Employee_Vault/Bronze/Inbox
+2026-02-20 01:12:27,942 [FileSystemWatcher] INFO: Drop files into /Inbox/ to trigger processing.
+2026-02-20 01:12:27,942 [FileSystemWatcher] INFO: Press Ctrl+C to stop.
+
+2026-02-20 01:36:53,038 [FileSystemWatcher] INFO: Vault path: /mnt/d/Vaults/AI_Employee_Vault/Bronze
+2026-02-20 01:36:53,039 [FileSystemWatcher] INFO: Watching: /mnt/d/Vaults/AI_Employee_Vault/Bronze/Inbox
+2026-02-20 01:36:53,040 [FileSystemWatcher] INFO: Drop files into /Inbox/ to trigger processing.
+2026-02-20 01:36:53,041 [FileSystemWatcher] INFO: Press Ctrl+C to stop.
+
+2026-02-20 01:37:08,127 [FileSystemWatcher] INFO: Vault path: /mnt/d/Vaults/AI_Employee_Vault/Bronze
+2026-02-20 01:37:08,128 [FileSystemWatcher] INFO: Watching: /mnt/d/Vaults/AI_Employee_Vault/Bronze/Inbox
+2026-02-20 01:37:08,129 [FileSystemWatcher] INFO: Drop files into /Inbox/ to trigger processing.
+2026-02-20 01:37:08,129 [FileSystemWatcher] INFO: Press Ctrl+C to stop.
+
+2026-02-20 01:37:11,664 [InboxHandler] INFO: New file detected: urgent_q1_report.txt
+2026-02-20 01:37:11,667 [InboxHandler] INFO: New file detected: urgent_q1_report.txt
+2026-02-20 01:37:11,679 [InboxHandler] INFO: Created action file: FILE_urgent_q1_report_2026-02-19_203711.md [priority=high]
+2026-02-20 01:37:11,687 [InboxHandler] INFO: Created action file: FILE_urgent_q1_report_2026-02-19_203711.md [priority=high]
+2026-02-20 01:37:12,870 [InboxHandler] INFO: New file detected: urgent_q1_report.txt
+2026-02-20 01:37:12,870 [InboxHandler] INFO: New file detected: urgent_q1_report.txt
+2026-02-20 01:37:12,878 [InboxHandler] INFO: New file detected: urgent_q1_report.txt
+2026-02-20 01:37:12,885 [InboxHandler] INFO: New file detected: urgent_q1_report.txt
+2026-02-20 01:37:12,907 [InboxHandler] INFO: Created action file: FILE_urgent_q1_report_2026-02-19_203712.md [priority=high]
+2026-02-20 01:37:12,916 [InboxHandler] INFO: Created action file: FILE_urgent_q1_report_2026-02-19_203712.md [priority=high]
+2026-02-20 01:37:12,994 [InboxHandler] INFO: Created action file: FILE_urgent_q1_report_2026-02-19_203712.md [priority=high]
+2026-02-20 01:37:13,001 [InboxHandler] INFO: Created action file: FILE_urgent_q1_report_2026-02-19_203712.md [priority=high]
+2026-02-20 01:37:14,189 [InboxHandler] INFO: New file detected: urgent_q1_report.txt
+2026-02-20 01:37:14,190 [InboxHandler] INFO: New file detected: urgent_q1_report.txt
+2026-02-20 01:37:14,225 [InboxHandler] INFO: Created action file: FILE_urgent_q1_report_2026-02-19_203714.md [priority=high]
+2026-02-20 01:37:14,310 [InboxHandler] INFO: Created action file: FILE_urgent_q1_report_2026-02-19_203714.md [priority=high]
+2026-02-20 01:48:26,285 [InboxHandler] INFO: New file detected: urgent_q1_report.md
+2026-02-20 01:48:26,323 [InboxHandler] INFO: Created action file: FILE_urgent_q1_report_2026-02-19_204826.md [priority=high]
+2026-02-20 01:48:28,216 [InboxHandler] INFO: New file detected: urgent_q1_report.md
+2026-02-20 01:48:28,217 [InboxHandler] INFO: New file detected: urgent_q1_report.md
+2026-02-20 01:48:28,232 [InboxHandler] INFO: New file detected: urgent_q1_report.md
+2026-02-20 01:48:28,240 [InboxHandler] INFO: Created action file: FILE_urgent_q1_report_2026-02-19_204828.md [priority=high]
+2026-02-20 01:48:28,263 [InboxHandler] INFO: Created action file: FILE_urgent_q1_report_2026-02-19_204828.md [priority=high]
+2026-02-20 01:48:28,404 [InboxHandler] INFO: Created action file: FILE_urgent_q1_report_2026-02-19_204828.md [priority=high]
+2026-02-20 01:48:42,584 [InboxHandler] INFO: New file detected: urgent_q1_report.md
+2026-02-20 01:48:42,633 [InboxHandler] INFO: Created action file: FILE_urgent_q1_report_2026-02-19_204842.md [priority=high]
+2026-02-20 01:48:44,556 [InboxHandler] INFO: New file detected: urgent_q1_report.md
+2026-02-20 01:48:44,557 [InboxHandler] INFO: New file detected: urgent_q1_report.md
+2026-02-20 01:48:44,565 [InboxHandler] INFO: New file detected: urgent_q1_report.md
+2026-02-20 01:48:44,580 [InboxHandler] INFO: Created action file: FILE_urgent_q1_report_2026-02-19_204844.md [priority=high]
+2026-02-20 01:48:44,640 [InboxHandler] INFO: Created action file: FILE_urgent_q1_report_2026-02-19_204844.md [priority=high]
+2026-02-20 01:48:44,644 [InboxHandler] INFO: Created action file: FILE_urgent_q1_report_2026-02-19_204844.md [priority=high]
+2026-02-20 01:48:56,726 [InboxHandler] INFO: New file detected: urgent_q1_report.md
+2026-02-20 01:48:56,726 [InboxHandler] INFO: New file detected: urgent_q1_report.md
+2026-02-20 01:48:56,727 [InboxHandler] INFO: New file detected: urgent_q1_report.md
+2026-02-20 01:48:56,736 [InboxHandler] INFO: Created action file: FILE_urgent_q1_report_2026-02-19_204856.md [priority=high]
+2026-02-20 01:48:56,769 [InboxHandler] INFO: Created action file: FILE_urgent_q1_report_2026-02-19_204856.md [priority=high]
+2026-02-20 01:48:56,773 [InboxHandler] INFO: Created action file: FILE_urgent_q1_report_2026-02-19_204856.md [priority=high]
+2026-02-20 01:48:57,673 [InboxHandler] INFO: New file detected: urgent_q1_report.md
+2026-02-20 01:48:57,686 [InboxHandler] INFO: Created action file: FILE_urgent_q1_report_2026-02-19_204857.md [priority=high]
+2026-02-20 01:49:09,682 [FileSystemWatcher] INFO: Vault path: D:\Vaults\AI_Employee_Vault\Bronze
+2026-02-20 01:49:09,683 [FileSystemWatcher] INFO: Watching: D:\Vaults\AI_Employee_Vault\Bronze\Inbox
+2026-02-20 01:49:09,684 [FileSystemWatcher] INFO: Drop files into /Inbox/ to trigger processing.
+2026-02-20 01:49:09,684 [FileSystemWatcher] INFO: Press Ctrl+C to stop.
+
+2026-02-20 01:50:22,107 [InboxHandler] INFO: New file detected: urgent_q1_report.md
+2026-02-20 01:50:22,115 [InboxHandler] INFO: New file detected: urgent_q1_report.md
+2026-02-20 01:50:22,128 [InboxHandler] INFO: Created action file: FILE_urgent_q1_report_2026-02-19_205022.md [priority=high]
+2026-02-20 01:50:22,126 [InboxHandler] INFO: New file detected: urgent_q1_report.md
+2026-02-20 01:50:22,135 [InboxHandler] INFO: New file detected: urgent_q1_report.md
+2026-02-20 01:50:22,138 [InboxHandler] INFO: New file detected: urgent_q1_report.md
+2026-02-20 01:50:22,204 [InboxHandler] INFO: Created action file: FILE_urgent_q1_report_2026-02-19_205022.md [priority=high]
+2026-02-20 01:50:22,208 [InboxHandler] INFO: Created action file: FILE_urgent_q1_report_2026-02-19_205022.md [priority=high]
+2026-02-20 01:50:22,209 [InboxHandler] INFO: Created action file: FILE_urgent_q1_report_2026-02-19_205022.md [priority=high]
+2026-02-20 01:50:22,279 [InboxHandler] INFO: Created action file: FILE_urgent_q1_report_2026-02-19_205022.md [priority=high]
+2026-02-20 01:50:23,073 [InboxHandler] INFO: New file detected: urgent_q1_report.md
+2026-02-20 01:50:23,074 [InboxHandler] INFO: New file detected: urgent_q1_report.md
+2026-02-20 01:50:23,089 [InboxHandler] INFO: Created action file: FILE_urgent_q1_report_2026-02-19_205023.md [priority=high]
+2026-02-20 01:50:23,099 [InboxHandler] INFO: Created action file: FILE_urgent_q1_report_2026-02-19_205023.md [priority=high]
+2026-02-20 01:50:23,108 [InboxHandler] INFO: New file detected: urgent_q1_report.md
+2026-02-20 01:50:23,177 [InboxHandler] INFO: Created action file: FILE_urgent_q1_report_2026-02-19_205023.md [priority=high]
+2026-02-20 01:50:24,831 [InboxHandler] INFO: New file detected: urgent_q1_report.md
+2026-02-20 01:50:24,833 [InboxHandler] INFO: Created action file: FILE_urgent_q1_report_2026-02-19_205024.md [priority=high]
+2026-02-20 01:51:11,509 [FileSystemWatcher] INFO: Shutting down file watcher...
+2026-02-20 01:51:11,511 [FileSystemWatcher] INFO: File watcher stopped.
+2026-02-20 02:28:24,355 [FileSystemWatcher] INFO: Vault path: D:\Vaults\AI_Employee_Vault\Bronze
+2026-02-20 02:28:24,355 [FileSystemWatcher] INFO: Watching: D:\Vaults\AI_Employee_Vault\Bronze\Inbox
+2026-02-20 02:28:24,355 [FileSystemWatcher] INFO: Drop files into /Inbox/ to trigger processing.
+2026-02-20 02:28:24,356 [FileSystemWatcher] INFO: Press Ctrl+C to stop.
+
+2026-02-20 02:29:17,393 [InboxHandler] INFO: New file detected: urgent_report_2026.md
+2026-02-20 02:29:17,392 [InboxHandler] INFO: New file detected: urgent_report_2026.md
+2026-02-20 02:29:17,394 [InboxHandler] INFO: New file detected: urgent_report_2026.md
+2026-02-20 02:29:17,396 [InboxHandler] INFO: New file detected: urgent_report_2026.md
+2026-02-20 02:29:17,399 [InboxHandler] INFO: New file detected: urgent_report_2026.md
+2026-02-20 02:29:17,401 [InboxHandler] INFO: New file detected: urgent_report_2026.md
+2026-02-20 02:29:17,399 [InboxHandler] INFO: New file detected: urgent_report_2026.md
+2026-02-20 02:29:17,409 [InboxHandler] INFO: New file detected: urgent_report_2026.md
+2026-02-20 02:29:17,428 [InboxHandler] INFO: Created action file: FILE_urgent_report_2026_2026-02-19_212917.md [priority=high]
+2026-02-20 02:29:17,432 [InboxHandler] INFO: Created action file: FILE_urgent_report_2026_2026-02-19_212917.md [priority=high]
+2026-02-20 02:29:17,435 [InboxHandler] INFO: Created action file: FILE_urgent_report_2026_2026-02-19_212917.md [priority=high]
+2026-02-20 02:29:17,436 [InboxHandler] INFO: Created action file: FILE_urgent_report_2026_2026-02-19_212917.md [priority=high]
+2026-02-20 02:29:17,436 [InboxHandler] INFO: Created action file: FILE_urgent_report_2026_2026-02-19_212917.md [priority=high]
+2026-02-20 02:29:17,438 [InboxHandler] INFO: Created action file: FILE_urgent_report_2026_2026-02-19_212917.md [priority=high]
+2026-02-20 02:29:17,464 [InboxHandler] INFO: Created action file: FILE_urgent_report_2026_2026-02-19_212917.md [priority=high]
+2026-02-20 02:29:17,469 [InboxHandler] INFO: Created action file: FILE_urgent_report_2026_2026-02-19_212917.md [priority=high]
+2026-02-20 02:29:19,441 [InboxHandler] INFO: New file detected: urgent_report_2026.md
+2026-02-20 02:29:19,442 [InboxHandler] INFO: Created action file: FILE_urgent_report_2026_2026-02-19_212919.md [priority=high]
