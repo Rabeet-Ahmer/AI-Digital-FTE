@@ -181,3 +181,12 @@
 2026-02-20 02:29:17,469 [InboxHandler] INFO: Created action file: FILE_urgent_report_2026_2026-02-19_212917.md [priority=high]
 2026-02-20 02:29:19,441 [InboxHandler] INFO: New file detected: urgent_report_2026.md
 2026-02-20 02:29:19,442 [InboxHandler] INFO: Created action file: FILE_urgent_report_2026_2026-02-19_212919.md [priority=high]
+2026-03-14 20:00:21,878 [FileSystemWatcher] INFO: Vault path: D:\Vaults\AI_Employee_Vault\Bronze
+2026-03-14 20:00:21,879 [FileSystemWatcher] INFO: Watching: D:\Vaults\AI_Employee_Vault\Bronze\Inbox
+2026-03-14 20:00:21,879 [FileSystemWatcher] INFO: Drop files into /Inbox/ to trigger processing.
+2026-03-14 20:00:21,880 [FileSystemWatcher] INFO: Press Ctrl+C to stop.
+
+2026-03-14 20:05:03,027 [InboxHandler] INFO: New file detected: customer-complaint.md
+2026-03-14 20:05:03,105 [InboxHandler] INFO: Created action file: FILE_customer-complaint_2026-03-14_150503.md [priority=medium]
+2026-03-14 20:26:15,594 [InboxHandler] INFO: New file detected: customer-complaint-2.md
+2026-03-14 20:26:15,607 [InboxHandler] INFO: Created action file: FILE_customer-complaint-2_2026-03-14_152615.md [priority=medium]
