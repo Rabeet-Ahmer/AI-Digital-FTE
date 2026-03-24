@@ -190,3 +190,23 @@
 2026-03-14 20:05:03,105 [InboxHandler] INFO: Created action file: FILE_customer-complaint_2026-03-14_150503.md [priority=medium]
 2026-03-14 20:26:15,594 [InboxHandler] INFO: New file detected: customer-complaint-2.md
 2026-03-14 20:26:15,607 [InboxHandler] INFO: Created action file: FILE_customer-complaint-2_2026-03-14_152615.md [priority=medium]
+2026-03-15 04:15:56,877 [FileSystemWatcher] INFO: Shutting down file watcher...
+2026-03-15 04:15:56,907 [FileSystemWatcher] INFO: File watcher stopped.
+2026-03-17 09:45:18,164 [FileSystemWatcher] INFO: Vault path: D:\Vaults\AI_Employee_Vault\Bronze
+2026-03-17 09:45:18,165 [FileSystemWatcher] INFO: Watching: D:\Vaults\AI_Employee_Vault\Bronze\Inbox
+2026-03-17 09:45:18,165 [FileSystemWatcher] INFO: Drop files into /Inbox/ to trigger processing.
+2026-03-17 09:45:18,165 [FileSystemWatcher] INFO: Press Ctrl+C to stop.
+
+2026-03-17 09:46:43,316 [InboxHandler] INFO: New file detected: customer-complaint-2.md
+2026-03-17 09:46:43,321 [InboxHandler] INFO: Created action file: FILE_customer-complaint-2_2026-03-17_044643.md [priority=medium]
+2026-03-17 09:47:47,396 [FileSystemWatcher] INFO: Shutting down file watcher...
+2026-03-17 09:47:47,397 [FileSystemWatcher] INFO: File watcher stopped.
+2026-03-17 09:54:05,817 [FileSystemWatcher] INFO: Vault path: /mnt/d/Vaults/AI_Employee_Vault/Bronze
+2026-03-17 09:54:05,819 [FileSystemWatcher] INFO: Watching: /mnt/d/Vaults/AI_Employee_Vault/Bronze/Inbox
+2026-03-17 09:54:05,820 [FileSystemWatcher] INFO: Drop files into /Inbox/ to trigger processing.
+2026-03-17 09:54:05,821 [FileSystemWatcher] INFO: Press Ctrl+C to stop.
+
+2026-03-17 09:54:57,557 [InboxHandler] INFO: New file detected: customer-complaint-2.md
+2026-03-17 09:54:57,572 [InboxHandler] INFO: Created action file: FILE_customer-complaint-2_2026-03-17_045457.md [priority=medium]
+2026-03-17 10:08:35,263 [FileSystemWatcher] INFO: Shutting down file watcher...
+2026-03-17 10:08:35,264 [FileSystemWatcher] INFO: File watcher stopped.

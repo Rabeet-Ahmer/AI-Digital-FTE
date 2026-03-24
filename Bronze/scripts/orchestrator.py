@@ -93,7 +93,7 @@ class BronzeOrchestrator:
         try:
             # Invoke Claude Code in non-interactive mode
             result = subprocess.run(
-                ["claude", "--print", "--prompt", prompt],
+                ["bonsai start", "--print", "--prompt", prompt],
                 capture_output=True,
                 text=True,
                 timeout=120,
