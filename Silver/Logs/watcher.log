@@ -1,0 +1,16 @@
+2026-03-25 00:29:49,322 [FileSystemWatcher] INFO: Vault path: /mnt/d/Vaults/AI_Employee_Vault/Silver
+2026-03-25 00:29:49,323 [FileSystemWatcher] INFO: Watching: /mnt/d/Vaults/AI_Employee_Vault/Silver/Inbox
+2026-03-25 00:29:49,323 [FileSystemWatcher] INFO: Watching: /mnt/d/Vaults/AI_Employee_Vault/Silver/Approved
+2026-03-25 00:29:49,324 [FileSystemWatcher] INFO: Drop files into /Inbox/ to trigger processing.
+2026-03-25 00:29:49,324 [FileSystemWatcher] INFO: Move files to /Approved/ to execute approved actions.
+2026-03-25 00:29:49,325 [FileSystemWatcher] INFO: Press Ctrl+C to stop.
+
+2026-03-25 00:30:32,094 [ApprovedHandler] INFO: Approved item detected: APPROVAL_linkedin_post_first-post-intro_2026-03-25_191852.md
+2026-03-25 00:30:32,103 [ApprovedHandler] INFO: Action type: linkedin_post
+2026-03-25 00:30:32,116 [ApprovedHandler] INFO: Posting to LinkedIn (1024 chars)...
+2026-03-25 00:31:16,512 [ApprovedHandler] INFO: LinkedIn post result: {
+  "success": true,
+  "message": "Successfully posted 1024 chars to LinkedIn.",
+  "timestamp": "2026-03-24T19:30:31.638538+00:00",
+  "content_preview": "I've been building things with AI for a while 
+2026-03-25 00:31:16,527 [ApprovedHandler] INFO: Moved to Done: APPROVAL_linkedin_post_first-post-intro_2026-03-25_191852.md

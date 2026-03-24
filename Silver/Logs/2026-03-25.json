@@ -1,0 +1,11 @@
+[
+  {
+    "timestamp": "2026-03-25T19:18:52Z",
+    "action_type": "approval_request_created",
+    "description": "Created approval request for LinkedIn post: First post — personal introduction",
+    "source_skill": "linkedin-poster → linkedin-content → approval-request",
+    "file_created": "Pending_Approval/APPROVAL_linkedin_post_first-post-intro_2026-03-25_191852.md",
+    "risk_level": "high",
+    "status": "pending_approval"
+  }
+]
