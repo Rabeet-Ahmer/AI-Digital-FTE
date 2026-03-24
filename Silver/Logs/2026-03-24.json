@@ -1,0 +1,33 @@
+[
+  {
+    "timestamp": "2026-03-24T18:00:00Z",
+    "action_type": "approval_request_created",
+    "description": "Created approval request for LinkedIn post: March 2026 AI News Roundup",
+    "source_skill": "linkedin-poster → linkedin-content → approval-request",
+    "file_created": "Pending_Approval/APPROVAL_linkedin_post_march-2026-ai-roundup_2026-03-24_180000.md",
+    "risk_level": "high",
+    "status": "pending_approval"
+  },
+  {
+    "timestamp": "2026-03-24T18:22:00Z",
+    "action_type": "approval_granted",
+    "description": "Manager approved LinkedIn post: March 2026 AI News Roundup",
+    "file_moved": "Pending_Approval → Approved",
+    "status": "approved"
+  },
+  {
+    "timestamp": "2026-03-24T18:23:00Z",
+    "action_type": "linkedin_post_attempted",
+    "description": "Playwright posting failed — missing system library libnspr4.so in WSL2 environment. Sudo required for install.",
+    "error": "BrowserType.launch_persistent_context: missing libnspr4.so",
+    "status": "blocked",
+    "resolution": "Fixed by installing WSL2 system libraries"
+  },
+  {
+    "timestamp": "2026-03-24T19:06:13Z",
+    "action_type": "linkedin_post_published",
+    "description": "Successfully posted March 2026 AI News Roundup to LinkedIn (1569 chars). Automated via Playwright after fixing selector issues.",
+    "content_preview": "March 2026 might be the most consequential month in AI history...",
+    "status": "completed"
+  }
+]
