@@ -203,9 +203,171 @@ status: pending
         )
 
 
+class ApprovedHandler(FileSystemEventHandler):
+    """Handles file creation events in the Approved folder."""
+
+    def __init__(self, vault_path: str):
+        self.vault_path = Path(vault_path)
+        self.done = self.vault_path / "Done"
+        self.logs_dir = self.vault_path / "Logs"
+        self.scripts_dir = self.vault_path / "scripts"
+        self.logger = logging.getLogger("ApprovedHandler")
+        self.processed_files: set[str] = set()
+
+    def on_created(self, event):
+        if event.is_directory:
+            return
+
+        source = Path(event.src_path)
+
+        if source.name.startswith(".") or source.name.startswith("~"):
+            return
+
+        if not source.name.endswith(".md"):
+            return
+
+        if source.name in self.processed_files:
+            return
+        self.processed_files.add(source.name)
+
+        self.logger.info(f"Approved item detected: {source.name}")
+
+        try:
+            content = source.read_text(encoding="utf-8")
+            action_type = "unknown"
+            for line in content.split("\n"):
+                if line.startswith("action_type:"):
+                    action_type = line.split(":", 1)[1].strip().strip("\"'")
+                    break
+
+            self.logger.info(f"Action type: {action_type}")
+            self._dispatch(source, content, action_type)
+
+        except Exception as e:
+            self.logger.error(f"Failed to process approved item {source.name}: {e}")
+            self._log_action("error", str(source), "", str(e), "failure")
+
+    def _dispatch(self, source: Path, content: str, action_type: str):
+        """Dispatch approved action based on action_type."""
+        if action_type == "linkedin_post":
+            self._handle_linkedin_post(source, content)
+        else:
+            # For other action types, write signal for orchestrator
+            self.logger.info(f"Writing signal for orchestrator to handle: {action_type}")
+            self._write_signal()
+            self._log_action(
+                "approved_dispatch",
+                str(source),
+                "",
+                f"Approved {action_type} — signaled orchestrator",
+                "pending",
+            )
+
+    def _handle_linkedin_post(self, source: Path, content: str):
+        """Extract post content and run linkedin_poster.py."""
+        # Extract post content from the "### Proposed Content" markdown section
+        post_content = None
+        in_proposed = False
+        lines = []
+        for line in content.split("\n"):
+            if line.strip() == "### Proposed Content":
+                in_proposed = True
+                continue
+            if in_proposed:
+                if line.startswith("### "):
+                    break
+                lines.append(line)
+
+        if lines:
+            post_content = "\n".join(lines).strip()
+
+        if not post_content:
+            self.logger.error("Could not extract post content from approval file")
+            self._log_action("error", str(source), "", "No post content found", "failure")
+            return
+
+        # Write content to temp file and invoke linkedin_poster.py
+        tmp_file = self.scripts_dir / ".tmp_post_content.txt"
+        tmp_file.write_text(post_content, encoding="utf-8")
+
+        self.logger.info(f"Posting to LinkedIn ({len(post_content)} chars)...")
+
+        try:
+            import subprocess
+
+            result = subprocess.run(
+                ["uv", "run", "python", "linkedin_poster.py", "--content-file", str(tmp_file)],
+                capture_output=True,
+                text=True,
+                timeout=120,
+                cwd=str(self.scripts_dir),
+            )
+
+            if result.returncode == 0:
+                self.logger.info(f"LinkedIn post result: {result.stdout.strip()[:200]}")
+                self._complete_item(source, result.stdout.strip())
+            else:
+                self.logger.error(f"LinkedIn post failed: {result.stderr[:200]}")
+                self._log_action("error", str(source), "", result.stderr[:200], "failure")
+
+        except subprocess.TimeoutExpired:
+            self.logger.error("LinkedIn posting timed out")
+            self._log_action("error", str(source), "", "Posting timed out", "failure")
+        finally:
+            tmp_file.unlink(missing_ok=True)
+
+    def _complete_item(self, source: Path, summary: str):
+        """Move executed approval to /Done."""
+        now = datetime.now(timezone.utc)
+        content = source.read_text(encoding="utf-8")
+        content = content.replace("status: pending_approval", "status: done")
+        content += (
+            f"\n\n## Execution\n"
+            f"- **Executed:** {now.isoformat()}\n"
+            f"- **Summary:** {summary[:200]}\n"
+        )
+        source.write_text(content, encoding="utf-8")
+
+        dest = self.done / source.name
+        source.rename(dest)
+        self.logger.info(f"Moved to Done: {source.name}")
+
+        self._log_action("approved_executed", str(source), str(dest), summary[:100], "success")
+
+    def _write_signal(self):
+        signal_path = self.vault_path / ".new_work_signal"
+        signal_path.write_text(
+            datetime.now(timezone.utc).isoformat(), encoding="utf-8"
+        )
+
+    def _log_action(self, action_type, source, destination, details, result):
+        today = datetime.now(timezone.utc).strftime("%Y-%m-%d")
+        log_file = self.logs_dir / f"{today}.json"
+        entry = {
+            "timestamp": datetime.now(timezone.utc).isoformat(),
+            "action_type": action_type,
+            "actor": "approved_watcher",
+            "source": source,
+            "destination": destination,
+            "details": details,
+            "result": result,
+        }
+        entries = []
+        if log_file.exists():
+            try:
+                entries = json.loads(log_file.read_text(encoding="utf-8"))
+            except (json.JSONDecodeError, Exception):
+                entries = []
+        entries.append(entry)
+        log_file.write_text(
+            json.dumps(entries, indent=2, ensure_ascii=False), encoding="utf-8"
+        )
+
+
 def main():
     vault_path = Path(__file__).resolve().parent.parent
     inbox_path = vault_path / "Inbox"
+    approved_path = vault_path / "Approved"
 
     # Ensure directories exist
     for folder in ["Inbox", "Needs_Action", "Pending_Approval", "Approved", "Rejected", "Done", "Logs", "Plans"]:
@@ -224,13 +386,17 @@ def main():
 
     logger.info(f"Vault path: {vault_path}")
     logger.info(f"Watching: {inbox_path}")
+    logger.info(f"Watching: {approved_path}")
     logger.info("Drop files into /Inbox/ to trigger processing.")
+    logger.info("Move files to /Approved/ to execute approved actions.")
     logger.info("Press Ctrl+C to stop.\n")
 
     # PollingObserver works reliably across WSL, Windows, macOS, Linux
-    handler = InboxHandler(str(vault_path))
+    inbox_handler = InboxHandler(str(vault_path))
+    approved_handler = ApprovedHandler(str(vault_path))
     observer = PollingObserver(timeout=5)
-    observer.schedule(handler, str(inbox_path), recursive=False)
+    observer.schedule(inbox_handler, str(inbox_path), recursive=False)
+    observer.schedule(approved_handler, str(approved_path), recursive=False)
     observer.start()
 
     try:
